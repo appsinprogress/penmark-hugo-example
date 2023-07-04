@@ -5,6 +5,15 @@
 {{- else }} {{/* if not profileMode */}}
 
 {{- if .IsHome }}
+<script 
+    type="module" 
+    src="https://penmark.appsinprogress.com/dist/DraftsClient.js"
+    draftsFolder="drafts"
+    postsFolder="content/posts"
+    imagesFolder="static/images"
+    githubUsername="thomasgauvin"
+    githubRepoName="hugo-penmark-example"
+></script>
 {{- end }}
 
 {{- if not .IsHome | and .Title }}

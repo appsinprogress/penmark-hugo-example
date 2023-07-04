@@ -23,6 +23,16 @@
       {{- end }}
       {{ $filePath := printf "%s%s" "content/" .File.Path }}
     </div>
+    <script 
+      type="module" 
+      src="https://penmark.appsinprogress.com/dist/PostClient.js"
+      draftsFolder="drafts"
+      postsFolder="content/posts"
+      imagesFolder="static/images"
+      githubUsername="thomasgauvin"
+      githubRepoName="hugo-penmark-example"
+      postfilepath="{{ $filePath }}"
+    ></script>
   </header>
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
