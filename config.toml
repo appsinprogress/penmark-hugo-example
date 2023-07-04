@@ -1,0 +1,4 @@
+baseURL = 'https://happy-ocean-0720bc31e.3.azurestaticapps.net/'
+languageCode = 'en-us'
+title = "Tom's Blog"
+theme = 'PaperMod'
